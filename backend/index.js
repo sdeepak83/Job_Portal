@@ -16,10 +16,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-const corsOptions = {
-  origin: "http//localhost:5173",
-  Credentials: true,
-};
+// const corsOptions = {
+//   origin: "http//localhost:5173",
+//   Credentials: true,
+// };
 
 app.use(
   cors({
@@ -31,6 +31,16 @@ app.use(
       "http://localhost:4000",
       "http://localhost:5173/",
     ],
+  })
+);
+
+app.use(
+  cors({
+    origin: "https://slug-panel.onrender.com",
+    headers: {
+      "Access-Control-Allow-Origin": "https://slug-panel.onrender.com",
+      "Access-Control-Allow-Credentials": true,
+    },
   })
 );
 const PORT = process.env.PORT || 3000;
