@@ -1,6 +1,6 @@
 
 
-export const USER_END_POINT = "p://localhost:8000/api/v1/user";
+export const USER_END_POINT = "http://localhost:8000/api/v1/user";
 htt
 export const JOB_API_END_POINT = "http://localhost:8000/api/v1/job";
 
