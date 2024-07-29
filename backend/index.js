@@ -36,9 +36,9 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://slug-panel.onrender.com",
+    origin: "https://job-portal-frontend-4r7o.onrender.com",
     headers: {
-      "Access-Control-Allow-Origin": "https://slug-panel.onrender.com",
+      "Access-Control-Allow-Origin": "https://job-portal-frontend-4r7o.onrender.com",
       "Access-Control-Allow-Credentials": true,
     },
   })
