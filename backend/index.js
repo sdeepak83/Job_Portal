@@ -37,10 +37,7 @@ app.use(
   })
 );
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://job-portal-frontend-4r7o.onrender.com", true);
-xhr.withCredentials = true;
-xhr.send(null);
+
 
 
 // app.use(
