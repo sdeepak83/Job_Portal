@@ -21,18 +21,18 @@ app.use(cookieParser());
 //   Credentials: true,
 // };
 
-app.use(
-  cors({
-    credentials: true,
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-    allowedHeaders: ["Content-Type", "Authorization"],
-    origin: [
-      "http://localhost:2000",
-      "http://localhost:4000",
-      "http://localhost:5173/",
-    ],
-  })
-);
+// app.use(
+//   cors({
+//     credentials: true,
+//     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//     origin: [
+//       "http://localhost:2000",
+//       "http://localhost:4000",
+//       "http://localhost:5173/",
+//     ],
+//   })
+// );
 
 app.use(
   cors({
