@@ -31,7 +31,7 @@ app.use(cookieParser());
 
 app.use(
 	cors({
-		origin: "*",
+		origin: "https://job-portal-frontend-4r7o.onrender.com/",
 		credentials: true,
 	})
 );
